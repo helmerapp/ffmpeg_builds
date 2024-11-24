@@ -1,0 +1,14 @@
+prefix=/Users/pranav2612000/Desktop/Pranav/projects/custom-ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/pranav2612000/Desktop/Pranav/projects/custom-ffmpeg/lib
+includedir=/Users/pranav2612000/Desktop/Pranav/projects/custom-ffmpeg/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 61.5.100
+Requires: libswresample >= 5.2.100, libavutil >= 59.10.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lavcodec -liconv -lm -framework AudioToolbox -L/opt/homebrew/Cellar/x264/r3108/lib -lx264 -pthread -lz -framework VideoToolbox -framework CoreFoundation -framework CoreMedia -framework CoreVideo -framework CoreServices
+Libs.private: 
+Cflags: -I${includedir}

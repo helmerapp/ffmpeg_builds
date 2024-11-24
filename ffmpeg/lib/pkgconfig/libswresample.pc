@@ -1,0 +1,14 @@
+prefix=/Users/pranav2612000/Desktop/Pranav/projects/custom-ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/pranav2612000/Desktop/Pranav/projects/custom-ffmpeg/lib
+includedir=/Users/pranav2612000/Desktop/Pranav/projects/custom-ffmpeg/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 5.2.100
+Requires: libavutil >= 59.10.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lswresample -lm
+Libs.private: 
+Cflags: -I${includedir}

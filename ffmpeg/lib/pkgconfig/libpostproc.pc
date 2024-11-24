@@ -1,0 +1,14 @@
+prefix=/Users/pranav2612000/Desktop/Pranav/projects/custom-ffmpeg
+exec_prefix=${prefix}
+libdir=/Users/pranav2612000/Desktop/Pranav/projects/custom-ffmpeg/lib
+includedir=/Users/pranav2612000/Desktop/Pranav/projects/custom-ffmpeg/include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 58.2.100
+Requires: libavutil >= 59.10.100
+Requires.private: 
+Conflicts:
+Libs: -L${libdir}  -lpostproc -lm
+Libs.private: 
+Cflags: -I${includedir}
